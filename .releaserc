@@ -1,9 +1,8 @@
 {
     "branches": [
-      "master",
-      "v1.x.x"
+      "master"
     ],
-    "repositoryUrl": "https://github.com/kenift/rollup-typescript-boilerplate.git",
+    "repositoryUrl": "https://github.com/kenift/encoder.git",
     "plugins": [
       [
         "@semantic-release/commit-analyzer",
