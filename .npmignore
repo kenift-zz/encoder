@@ -1,0 +1,7 @@
+src/
+test/
+.releaserc
+.travis.yml
+babel.config.js
+rollup.config.js
+tsconfig.json
