@@ -56,3 +56,12 @@ test("Encoder: encrypt array [ 'Vernetti', 24 ], test pass if source is equal de
 
     expect(Encoder.decrypt.object(enc)).toEqual(el);
 });
+
+
+test("Encoder: encrypt array [ { test: 'test' } ], test pass if source is equal decryption", () => {
+    let el = [ { test: "test" } ];
+
+    let enc = Encoder.encrypt.object(el);
+
+    expect(Encoder.decrypt.object(enc)).toEqual(el);
+});
