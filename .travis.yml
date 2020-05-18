@@ -2,6 +2,11 @@ language: node_js
 node_js:
   - 12
 
+branches:
+  only:
+  - master
+  - v1.x.x
+
 jobs:
   include:
     - stage: test
