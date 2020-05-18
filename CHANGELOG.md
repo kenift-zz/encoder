@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/kenift/encoder/compare/v1.1.0...v1.2.0) (2020-05-18)
+
+
+### Features
+
+* **Encoder:** adding boolean support ([8aa02c8](https://github.com/kenift/encoder/commit/8aa02c805a7fba4c9c6f8c5fe1223773610bd2d3))
+
 # [1.1.0](https://github.com/kenift/encoder/compare/v1.0.0...v1.1.0) (2020-05-18)
 
 
