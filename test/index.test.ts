@@ -65,3 +65,27 @@ test("Encoder: encrypt array [ { test: 'test' } ], test pass if source is equal 
 
     expect(Encoder.decrypt.object(enc)).toEqual(el);
 });
+
+test("Encoder: encrypt boolean true", () => {
+    let el = true;
+
+    let enc = Encoder.encrypt.boolean(el);
+
+    expect(Encoder.decrypt.boolean(enc)).toBe(el);
+})
+
+test("Encoder: encrypt boolean false", () => {
+    let el = false;
+
+    let enc = Encoder.encrypt.boolean(el);
+
+    expect(Encoder.decrypt.boolean(enc)).toBe(el);
+})
+
+test("Encoder: two encryption is equal", () => {
+    let el = [ true, true ]
+
+    let enc = Encoder.encrypt.boolean(el[0]);
+
+    expect(Encoder.isEqual.boolean(el[1], enc)).toBeTruthy();
+})
