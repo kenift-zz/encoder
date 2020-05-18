@@ -82,7 +82,7 @@ test("Encoder: encrypt boolean false", () => {
     expect(Encoder.decrypt.boolean(enc)).toBe(el);
 })
 
-test("Encoder: two encryption is equal", () => {
+test("Encoder: boolean is equal encryption", () => {
     let el = [ true, true ]
 
     let enc = Encoder.encrypt.boolean(el[0]);
