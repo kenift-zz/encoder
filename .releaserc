@@ -1,6 +1,7 @@
 {
     "branches": [
-      "master"
+      "master",
+      "v1.x.x"
     ],
     "repositoryUrl": "https://github.com/kenift/encoder.git",
     "plugins": [
