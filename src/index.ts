@@ -16,6 +16,10 @@ const Encoder = new class Encoder {
         string: (data: string, enc: KHash) => boolean;
         number: (data: number, enc: KHash) => boolean;
         object: (data: object, enc: KHash) => boolean;
+        booleanHash: (data: KHash, enc: KHash) => boolean;
+        stringHash: (data: KHash, enc: KHash) => boolean;
+        numberHash: (data: KHash, enc: KHash) => boolean;
+        objectHash: (data: KHash, enc: KHash) => boolean;
     }
 
     public encrypt: {
@@ -57,6 +61,18 @@ const Encoder = new class Encoder {
             },
             object(data: object, enc: KHash): boolean {
                 return data === Encoder.decrypt.object(enc);
+            },
+            booleanHash(data: KHash, enc: KHash): boolean {
+                return Encoder.decrypt.boolean(data) === Encoder.decrypt.boolean(enc);
+            },
+            stringHash(data: KHash, enc: KHash): boolean {
+                return Encoder.decrypt.string(data) === Encoder.decrypt.string(enc);
+            },
+            numberHash(data: KHash, enc: KHash): boolean {
+                return Encoder.decrypt.number(data) === Encoder.decrypt.number(enc);
+            },
+            objectHash(data: KHash, enc: KHash): boolean {
+                return Encoder.decrypt.object(data) === Encoder.decrypt.object(enc);
             }
         }
 
