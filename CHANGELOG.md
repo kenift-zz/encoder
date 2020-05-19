@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/kenift/encoder/compare/v1.2.0...v1.3.0) (2020-05-19)
+
+
+### Bug Fixes
+
+* **package.json:** fix of version ([6cff5d3](https://github.com/kenift/encoder/commit/6cff5d3225ca0408c9f976d99ef1a30ef7184156))
+
+
+### Features
+
+* **Hashes:** adding hash to hash is equal method ([5f7a849](https://github.com/kenift/encoder/commit/5f7a8497ff7f141697b3872e8aebb49ff3b27105))
+
 # [1.2.0](https://github.com/kenift/encoder/compare/v1.1.0...v1.2.0) (2020-05-18)
 
 
